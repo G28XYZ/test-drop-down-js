@@ -13,6 +13,36 @@
       <header class="header">
         <h1 class="header__title">Lorem ipsum dolor</h1>
       </header>
+      <main class="content">
+        <section class="drop-down" aria-label="Выпадающий список">
+          <ol class="drop-down__list">
+            <li class="drop-down__item">
+              <article>
+                <h2 class="drop-down__title"></h2>
+                <button
+                  aria-label="Открыть/Закрыть"
+                  type="button"
+                  class="drop-down__toggle-button"
+                ></button>
+                <p class="drop-down__text"></p>
+              </article>
+            </li>
+          </ol>
+        </section>
+      </main>
     </div>
+    <template id="drop-down-template">
+      <li class="drop-down__item">
+        <article>
+          <h2 class="drop-down__title"></h2>
+          <button
+            aria-label="Открыть/Закрыть"
+            type="button"
+            class="drop-down__toggle-button"
+          ></button>
+          <p class="drop-down__text"></p>
+        </article>
+      </li>
+    </template>
   </body>
 </html>
