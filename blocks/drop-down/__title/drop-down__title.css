@@ -1,6 +1,7 @@
 .drop-down__title {
-  width: 100%;
   margin: 0;
   font-size: inherit;
   font-weight: inherit;
+  cursor: pointer;
+  padding-right: 20px;
 }

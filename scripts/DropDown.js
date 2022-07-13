@@ -15,16 +15,20 @@ class DropDown {
   _handleToggleItem = () => {
     this._toggleButton.classList.toggle("drop-down__toggle-button_active");
     this._item.classList.toggle("drop-down__item_active");
+    this._itemText.classList.toggle("drop-down__text_active");
   };
 
   _setHandlerListener() {
     this._toggleButton.addEventListener("click", this._handleToggleItem);
+    this._itemTitle.addEventListener("click", this._handleToggleItem);
   }
 
   generateItem() {
     this._item = this._getTemplate();
-    this._item.querySelector(".drop-down__title").textContent = this._title;
-    this._item.querySelector(".drop-down__text").textContent = this._text;
+    this._itemTitle = this._item.querySelector(".drop-down__title");
+    this._itemTitle.textContent = this._title;
+    this._itemText = this._item.querySelector(".drop-down__text");
+    this._itemText.textContent = this._text;
     this._toggleButton = this._item.querySelector(".drop-down__toggle-button");
     this._setHandlerListener();
 

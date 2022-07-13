@@ -1,3 +1,21 @@
 .drop-down {
   padding: 0 120px;
 }
+
+@media screen and (max-width: 1280px) {
+  .drop-down {
+    padding: 0 107px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .drop-down {
+    padding: 0 40px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .drop-down {
+    padding: 0 24px;
+  }
+}

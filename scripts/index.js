@@ -1,3 +1,4 @@
+import generateWords from "../utils/generateWords.js";
 import DropDown from "./DropDown.js";
 const state = { countDropDown: 0 };
 
@@ -12,6 +13,7 @@ function addItem(title = "Заголовок", text = "Текст") {
 document.addEventListener("DOMContentLoaded", () => {
   Array.from({ length: 5 }, () => {
     state.countDropDown += 1;
-    addItem(`${state.countDropDown}. Заголовок`, "Текст");
+
+    addItem(`${state.countDropDown}. ${generateWords()}`, generateWords(50));
   });
 });
