@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./pages/index.css" />
-    <script src="scripts/index.js" defer></script>
+    <script type="module" src="./scripts/DropDown.js"></script>
+    <script type="module" src="./scripts/index.js"></script>
     <title>Drop-down</title>
   </head>
   <body>
@@ -15,31 +16,21 @@
       </header>
       <main class="content">
         <section class="drop-down" aria-label="Выпадающий список">
-          <ol class="drop-down__list">
-            <li class="drop-down__item">
-              <article>
-                <h2 class="drop-down__title"></h2>
-                <button
-                  aria-label="Открыть/Закрыть"
-                  type="button"
-                  class="drop-down__toggle-button"
-                ></button>
-                <p class="drop-down__text"></p>
-              </article>
-            </li>
-          </ol>
+          <ol class="drop-down__list"></ol>
         </section>
       </main>
     </div>
     <template id="drop-down-template">
       <li class="drop-down__item">
         <article>
-          <h2 class="drop-down__title"></h2>
-          <button
-            aria-label="Открыть/Закрыть"
-            type="button"
-            class="drop-down__toggle-button"
-          ></button>
+          <div class="drop-down__header">
+            <h2 class="drop-down__title"></h2>
+            <button
+              aria-label="Открыть/Закрыть"
+              type="button"
+              class="drop-down__toggle-button"
+            ></button>
+          </div>
           <p class="drop-down__text"></p>
         </article>
       </li>

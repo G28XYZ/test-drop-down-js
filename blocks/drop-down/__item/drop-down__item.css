@@ -1,0 +1,14 @@
+.drop-down__item {
+  font-size: 24px;
+  line-height: calc(32 / 27);
+  padding: 24px 0;
+  width: 100%;
+}
+
+.drop-down__item:nth-child(1) {
+  border-top: 1px solid #e6e6e6;
+}
+
+.drop-down__item:nth-child(n + 1) {
+  border-bottom: 1px solid #e6e6e6;
+}

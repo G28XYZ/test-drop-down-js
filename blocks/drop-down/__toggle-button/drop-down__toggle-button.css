@@ -1,0 +1,15 @@
+.drop-down__toggle-button {
+  background-color: transparent;
+  width: 15px;
+  height: 15px;
+  background-image: url(../../../images/plus.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.6s;
+}
+
+.drop-down__toggle-button:hover {
+  transform: scale(1.2);
+}
